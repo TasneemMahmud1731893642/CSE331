@@ -4,18 +4,16 @@
 
 org 100h
 
- A EQU 1; 
- B EQU 1;
- C EQU 1;
- D EQU 1;
 
- MOV AX,0;
- ADD AX,A;
- ADD AX,B;
- ADD AX,C;
- ADD AX,D;
- 
- MOV BX,AX;
+A DB 1,2,3,4,5,6,7,8,9,10
+B DB 10 DUP(0)
+
+
+     
+      MOV AH,4CH
+      INT 21H
+CODE ENDS
+END START
 
 ret
 
